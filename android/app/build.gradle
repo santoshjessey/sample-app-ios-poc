@@ -208,6 +208,18 @@ android {
             }
         }
     }
+    
+    plugins {
+  id "org.sonarqube" version "3.4.0.2513"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "santoshjessey_sample-app-ios-poc"
+    property "sonar.organization", "santoshjessey"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
 
     splits {
         abi {
